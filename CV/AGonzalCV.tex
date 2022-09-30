@@ -1,0 +1,232 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Alfredo}{Gonz\'alez-Espinoza}
+\title{PhD in Science}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[fixed]{+1 (484) 758 8636}
+%\phone[fax]{+3~(456)~789~012}
+\email{spiralizing@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{https://www.fis.unam.mx/$~$jage/}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{spiralizing}                        % optional, remove / comment the line if not wanted
+\social[twitter]{spiralizing}                             % optional, remove / comment the line if not wanted
+\social[github]{spiralizing}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Science is built with facts as a house is with stones, but a collection of facts is no more a science than a heap of stones is a house. - Henri Poincar\'e}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Personal information}
+\cvitem{Date of birth}{February 10th 1987}
+\cvitem{Age}{35}
+\cvitem{Nationality}{Mexican}
+\cvitem{Contact}{spiralizing@gmail.com}
+\section{Professional experience}
+\cvitem{2019--2022}{Postdoctoral Researcher at the department of Biology, University of Pennsylvania, USA.}
+\cvitem{2018--2019}{Research Stay at the computational genomics group in the National Institute of Genomic Medicine, CDMX, México}
+
+\section{Education}
+\cventry{2014--2018}{PhD in Science (Physics)}{Universidad Aut\'onoma del Estado de Morelos}{Cuernavaca, Morelos, M\'exico}{Thesis: "Music scores characterization from a complex systems perspective" {\em Graduated with Honors} }{Supervisor: Dr. Gustavo Mart\'inez Mekler, Instituto de Ciencias F\'isicas, Universidad Nacional Aut\'onoma de M\'exico (UNAM)}
+% arguments 3 to 6 can be left empty
+\cventry{2011--2014}{Master of Science (Physics)}{Universidad Aut\'onoma del Estado de Morelos}{Cuernavaca, Morelos, M\'exico}{Thesis: "A discrete model for the Liesegang-type pattern formation in the reaction {\em NH$_3 +$HCl"}}{Supervisor: Dr. Gustavo M\'artinez Mekler, Instituto de Ciencias F\'isicas, UNAM}
+
+\cventry{2005--2011}{Bachelor of Science (Chemistry)}{Universidad Aut\'onoma del Estado de Morelos}{Cuernavaca, Morelos, M\'exico}{Thesis: "An {\em ab-initio} molecular potential for hydroxylamine"}{Supervisor: Dr. Jorge Hern\'andez Cobos, Instituto de Ciencias F\'isicas, UNAM}  
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+% \section{Experience}
+% \subsection{Vocational}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+
+\section{Research interests and experience}
+\cvitem{Music}{My research is mainly focused (but not limited to) in understanding different aspects related to music from a complex systems perspective.}
+\cvitem{Data Science}{Most of my work is data-oriented, I'm interested in inference and hypothesis testing, implementing Machine Learning and Statistical methods.}
+\cvitem{Statistical Physics}{Data and time series analysis (texts, NLP, music, biological data), stochastic modeling (markov processes, random walks, complex networks).}
+\cvitem{Complex Systems}{Self-organization and criticality, the emergence of global properties from collective behavior (human behavior, flocks, neuroscience).}
+\cvitem{Neuroscience}{I'm interested in music perception, language processing, creativity and cognition.}
+
+
+\section{Computer skills}
+\cvitemwithcomment{Programming}{Bash, C, Python, Julia}{I write my code mostly in Julia}
+\cvitemwithcomment{Software}{Matlab, Mathematica, Gephi}{}
+\cvitemwithcomment{Text}{LaTeX, LibreOffice}{}
+\cvitemwithcomment{DataBases}{SQL, NoSQL}{}
+
+\section{Awards and scholarships}
+\cventry{2003}{Second place}{XII Chemistry Olympiad of the State of Morelos, M\'exico}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2004}{First place}{XVIII Mathematics Olympiad of the State of Morelos, M\'exico}{}{}{}
+\cventry{2005}{First place}{XIII Chemistry Olympiad of the State of Morelos, M\'exico}{}{}{}
+\cventry{2011-2013}{Scholarship}{National scholarship for graduate studies (Master degree) by CoNaCyT}{}{}{}
+\cventry{2014-2018}{Scholarship}{National scholarship for graduate studies (PhD) by CoNaCyT}{}{}{}
+
+\section{Research stays}
+\cvitem{2012}{Research stay with Dr. Franco Bagnoli, Department of Physics, University of Florence, Italy.}
+\cvitem{2017}{Research stay with Dr. Edgardo Ugalde, Instituto de F\'isica, Universidad Aut\'onoma de San Luis Potos\'i, M\'exico.}
+
+\section{Organizational experience}
+\cvitem{2015}{Co-organizer in the workshop "Joint Action and Perception in Emergence Phenomena", Centro Internacional de Ciencias, Cuernavaca, M\'exico.}
+\cvitem{2017}{Co-organizer in the workshop "Science, Art and Cognition", Centro Internacional de Ciencias, Cuernavaca, M\'exico.}
+
+
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Native}{}
+\cvitemwithcomment{English}{Fluent}{}
+
+\section{Media}
+\cvitem{2020}{Time’s Arrow Flies through 500 Years of Classical Music, Physicists Say. {\em Scientific American}, url=https://www.scientificamerican.com/article/times-arrow-flies-through-500-years-of-classical-music-physicists-say/}{}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\nocite{*}
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{publications}  
+\section{Papers in preparation}
+\cvitem{[1]}{Alfredo Gonz\'alez-Espinoza and Joshua Plotkin. Harmony evolution and innovation in western classical music.}
+\cvitem{[2]}{Alfredo Gonz\'alez-Espinoza, Mitchel Newberry and Joshua Plotkin. Measuring Frequency-dependent selection in music listening.}
+
+\section{Attendance to conferences and schools}
+\cvitem{Talk}{"Processing and analysis of music scores". {\em 1st Conference of computational modeling and scientific computing 2014}, Universidad Aut\'onoma del Estado de Morelos, M\'exico}
+\cvitem{Poster}{"Long-range and nonlinear correlations in music scores". {\em Dynamics Days Latin America and the Caribbean 2016}, Puebla, M\'exico}
+\cvitem{Poster}{"Long-range and nonlinear correlations in music scores", {\em Workshop of mathematical and computational applications in music 2016}, Universidad de Buenos Aires, Argentina}
+\cvitem{School}{{\em Workshop of mathematical and computational applications in music 2016}, Universidad de Buenos Aires, Argentina}
+\cvitem{Poster}{"Growth and use of bicycle sharing systems from a networks perspective" {\em 1st Latin American Conference on Complex Networks 2017}, Puebla, M\'exico}
+\cvitem{Talk}{"Scaling and nonlinearity in music scores". {\em 2nd International week of complexity 2018}, Centro de Ciencias de la Complejidad, UNAM}
+\cvitem{School}{{\em Workshop in developing models for algorithmic composition and improvisation}, Centro Nacional de las Artes, M\'exico}
+\cvitem{Poster}{"Scaling and nonlinearity in music scores". {\em 7th International Conference on Nonlinear Science and Complexity } Instituto de F\'isica UASLP, San Luis Potosí, M\'exico.}
+\cvitem{Poster}{"Local structure characterization of gene regulatory networks in breast cancer." {\em  NetSci (Network Science Society) Conference 2019}, University of Vermont, USA.}
+\cvitem{Talk}{"Nonlinearity, time directionality and evolution in Western classical music.". {\em ICCS (International Conference in Complex Systems) 2020}, NECSI, Cambridge MA, USA.}
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\begin{cvcolumns}
+\cvcolumn{Prof. Joshua Plotkin}{Department of Biology, University of Pennsylvania.\\
+  jplotkin@sas.upenn.edu 
+  }
+  \cvcolumn{Dr. Gustavo Mart\'inez-Mekler}{Instituto de Ciencias F\'isicas, UNAM.\\
+  mekler@icf.unam.mx
+  }
+ \cvcolumn{Dr. Markus M\"uller Bender}{Centro de Investigaci\'on en Ciencias, Universidad Aut\'onoma del Estado de Morelos (UAEM).\\
+  muellerm@uaem.mx
+  }
+
+\end{cvcolumns}
+\begin{cvcolumns}
+  \cvcolumn{Dr. Hern\'an Larralde Ridaura}{Instituto de Ciencias F\'isicas, UNAM. \\ hernan@icf.unam.mx}
+  
+\cvcolumn{Dr. Edgardo Ugalde}{Instituto de F\'isica, Universidad Aut\'onoma de San Luis Potos\'i (UASLP).\\
+  ugalde@ifisica.uaslp.mx
+  }
+
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+                      % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

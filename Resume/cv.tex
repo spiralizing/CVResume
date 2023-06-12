@@ -1,0 +1,203 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,5pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{5pt}{5pt}
+\titlespacing{\subsection}{0pt}{5pt}{5pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Alfredo Gonz\'alez-Espinoza, PhD} \\[6pt]
+\href{https://github.com/spiralizing}{\raisebox{-0.05\height}\faGithub\ spiralizing} \ $|$ \ 
+\href{https://linkedin.com/in/spiralizing}{\raisebox{-0.05\height}\faLinkedin\ spiralizing} \ $|$ \ 
+\href{https://spiralizing.github.io/}{\raisebox{-0.05\height}\faGlobe \ spiralizing.github.io} \ 
+\\
+\href{mailto:spiralizing@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ spiralizing@gmail.com} \ $|$ \ 
+\href{tel:+14847588636}{\raisebox{-0.05\height}\faMobile \ (+1) 484 758 8636} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+Highly skilled Data Scientist with a background in Chemistry, Physics, Statistics, and Machine Learning. Demonstrated expertise in solving complex interdisciplinary problems and delivering innovative solutions. Passionate about data-oriented research and product development that contribute to generating a positive impact in society.
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Strengths \& Skills}
+Creative thinker and problem solver with a passion for intellectual curiosity. Fast learner with a strong drive for continuous growth. Exceptional project management abilities and effective communication skills across diverse teams. Proficient in translating technical concepts into practical analogies. Bilingual in English and Spanish, with strong verbal communication skills. Collaborative team player and attentive listener.
+\\
+{\bf Methodological expertise:}\\
+Complex Systems, Time Series Analysis, Stochastic Simulations, Network/Graph Theory, Information Theory, Hypothesis Testing, A/B Testing, Machine Learning, Bayesian Statistics/Modeling, Statistical Inference, Natural Language Processing.\\
+{\bf Technical Skills:}\\
+Languages: Julia (Flux, DataFrames, Plots, Turing), Python (Pandas, Numpy, Matplotlib, Keras, TensorFlow, PyTorch, Scikit-learn, NLTK, spaCy, scipy). Other: Linux, Bash, LaTeX, SSH, Git, SQLite, PostgreSQL, JSON, AWS, GCP, Spark, Docker, Jupyter notebook, Pluto notebook.
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Postdoctoral Researcher}, University of Pennsylvania, PA, USA. & \hfill 2019 - 2022 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{I led a research project in the mathematical biology group, focusing on quantifying innovation in music and understanding people's taste in music. With potential impact for music characterization, music generation and music recommendation systems. I collected, curated and processed data, designed models and conduct experiments, collected, analyzed and write results for publication. Research findings were featured in the prestigious journal Scientific American.
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Postdoctoral Researcher}, National Institute of Genomic Medicine, M\'exico. & \hfill 2018 - 2019 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed the methodology and analysis to understand the different types of malignancy in breast cancer and contribute to potential treatments for the disease. I developed a novel hybrid data-driven clustering algorithm to identify groups of genes relevant to cancer, implemented statistical analysis and write results for publication.
+}
+\end{tabularx}
+%Projects
+\subsection*{Other Experience/Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+%\textbf{Miscellaneous} (2010 - Present) & \hfill  \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{I have a long list of diverse type of projects I have worked in academic and non-academic environments. Most projects are data-oriented. Listed below a few of them.
+\begin{itemize}
+    %\item Ab-Initio Molecular potential for Hydroxilamine (Monte Carlo, Regression, Molecular mechanics)
+   % \item Pattern formation (2-D,3-D stochastic models, cellular automata, differential equations)
+   % \item Bike sharing system, Mexico city (characterizing system usage with network/graph theory)
+    \item Conducted data analysis on soccer GPS tracking data from a professional team in Mexico
+    \item Built and analyzed knowledge graphs of news articles using NLP and semantic graph techniques
+    \item Developed an LSTM model for sentiment analysis of tweets in Spanish
+    %\item Rank-frequency distributions in written language (NLP).
+    \item VADER sentiment analysis and topic modeling to characterize pop songs. 
+    %\item Inferring game strategies for online Diplomacy. (probabilistic and time series approach)
+    %\item Estimating molecular energies. (Persistent maps, non-covalent interactions, linear regression)
+    \item Developed predictive models for wine properties and quality using ANN
+\end{itemize}
+}  
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2014 - 2018 & PhD in Science (Physics) \textbf{Universidad Autónoma del Estado de Morelos, M\'exico}  \\
+            & \em{Graduated with honors} \\
+2011 - 2014 & Master of Science (Physics) \textbf{Universidad Autónoma del Estado de Morelos} \\ 
+
+2005 - 2011 & Bachelor of Science (Chemistry) \textbf{Universidad Autónoma del Estado de Morelos} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Awards \& Selected Publications}
+National scholarship for graduate studies (PhD) fully funded by CoNaCyT \\ 
+National scholarship for graduate studies (Master degree) fully funded by CoNaCyT \\
+\textbf{Alfredo González-Espinoza}, Gustavo Martínez-Mekler, and Lucas Lacasa. (2020) Arrow of
+time across five centuries of classical music.  \textit{Phys. Rev. Research}, 2:033166.
+\section{Interests \& Activities}
+Amateur cellist/musician, Photography, Soccer, Videogames, Continuos learning, Science Communication, Neuroscience, Urban planning
+\vfill
+%\center{\footnotesize Last updated: \today}
+
+\end{document}

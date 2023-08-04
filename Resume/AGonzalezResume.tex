@@ -69,7 +69,7 @@
 \usepackage{supertabular}
 \usepackage{tabularx}
 \newlength{\fullcollw}
-\setlength{\fullcollw}{0.47\textwidth}
+\setlength{\fullcollw}{0.4\textwidth}
 
 %custom \section
 \usepackage{titlesec}				
@@ -79,8 +79,8 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{5pt}{5pt}
-\titlespacing{\subsection}{0pt}{5pt}{5pt}
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\subsection}{0pt}{3.5pt}{3pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -132,48 +132,49 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-Data Scientist with a background in Chemistry, Physics, Statistics, and Machine Learning. Demonstrated expertise in solving complex interdisciplinary problems and delivering innovative solutions. Passionate about data-oriented research and product development that contribute to generating a positive impact in society.
+Data Scientist with a research background in Chemistry, Physics and Data Science. Demonstrated expertise in solving complex interdisciplinary problems and delivering innovative solutions. Passionate about data-oriented research and data-driven product development that contribute to generating a positive impact in society by solving real world problems. 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Strengths \& Skills}
-Creative thinker and problem solver with a passion for intellectual curiosity. Fast learner with a strong drive for continuous growth. Exceptional project management abilities and effective communication skills across diverse teams. Proficient in translating technical concepts into practical analogies. Bilingual in English and Spanish, with strong verbal communication skills. Collaborative team player and attentive listener.
+Creative thinker driven by intellectual curiosity and the excitement of exploring new challenges. Highly motivated to learn new skills and topics, and focused on continuous growth. Exceptional project management abilities and effective communication skills across diverse teams. Proficient in translating technical concepts into actionable insights for both technical and non-technical audiences. Inclusive and collaborative team player, attentive listener who values feedback, reflection, and self awareness.  
 \\
 {\bf Methodological expertise:}\\
-Complex Systems, Time Series Analysis, Stochastic Simulations, Network/Graph Theory, Information Theory, Hypothesis Testing, A/B Testing, Machine Learning, Bayesian Statistics/Modeling, Statistical Inference, Natural Language Processing.\\
+Complex Systems, Time Series Analysis, Stochastic Simulations, Network/Graph Theory, Information Theory, Hypothesis Testing, Machine Learning, Statistical Inference, Natural Language Processing.
+\\
 {\bf Technical Skills:}\\
-Languages: Julia (Flux, DataFrames, Plots, Turing), Python (Pandas, Numpy, Matplotlib, Keras, TensorFlow, PyTorch, Scikit-learn, NLTK, spaCy, scipy). Other: Linux, Bash, LaTeX, SSH, Git, SQLite, PostgreSQL, JSON, AWS, GCP, Spark, Docker, Jupyter notebook, Pluto notebook.
+Languages: Julia, Python (Pandas, Numpy, Matplotlib, PySpark, Keras, TensorFlow, PyTorch, Scikit-learn, NLTK, spaCy, scipy, Flask). Other: R (familiar), Linux, Bash, LaTeX, Git, SQL, Jupyter notebook, Pluto notebook, MLOps (CI/CD).
 %Experience
 \section{Work Experience}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Postdoctoral Researcher}, University of Pennsylvania, PA, USA. & \hfill 2019 - 2022 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{I led a research project in the mathematical biology group, focusing on quantifying innovation in music and understanding people's taste in music. With potential impact for music characterization, music generation and music recommendation systems. I collected, curated and processed data, designed models and conduct experiments, collected, analyzed and write results for publication. Research findings were featured in the prestigious journal Scientific American.
+\multicolumn{2}{@{}X@{}}{I led a research project in the mathematical biology group, focusing on quantifying the evolution of musical features and innovation in musical scores. Relevant work included: Data collection, cleaning and processing from diverse sources and in variable formats. I developed mathematical and probabilistic models, implemented computational algorithms and experiments for hypothesis testing. I also built and maintained data infrastructure and git repositories, develop quantitative research methods to analyze results. I wrote software documentation and research manuscripts for publication. Results featured in the prestigious journal Scientific American.
 }
 \end{tabularx}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Postdoctoral Researcher}, National Institute of Genomic Medicine, M\'exico. & \hfill 2018 - 2019 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Developed the methodology and analysis to understand the different types of malignancy in breast cancer and contribute to potential treatments for the disease. I developed a novel hybrid data-driven clustering algorithm to identify groups of genes relevant to cancer, implemented statistical analysis and write results for publication.
+\multicolumn{2}{@{}X@{}}{Developed the methodology and analysis to quantify different types of malignancy in breast cancer, and contributed to potential treatments. Relevant work included: collaborating with an interdisciplinary team on projects, developing a novel machine learning algorithm to identify communities of statistically dependent genes. I performed advanced statistical analysis and quantifies genomic features using information measures. I mentored PhD students in their research projects, present results weekly to PI and managers. Wrote software documentation and research manuscript for publication.
 }
 \end{tabularx}
 %Projects
 \subsection*{Other Experience/Projects}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 %\textbf{Miscellaneous} (2010 - Present) & \hfill  \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{I have a long list of diverse projects I have worked on in academic and non-academic environments. Most projects are data-oriented. Listed below a few of them.
+\multicolumn{2}{@{}X@{}}{I have a large array of diverse projects I have pursued in academic and non-academic environments. Most projects are data-oriented. A sample of these are listed here:
 \begin{itemize}
     %\item Ab-Initio Molecular potential for Hydroxilamine (Monte Carlo, Regression, Molecular mechanics)
-   % \item Pattern formation (2-D,3-D stochastic models, cellular automata, differential equations)
-   % \item Bike sharing system, Mexico city (characterizing system usage with network/graph theory)
-    \item Conducted data analysis on soccer GPS tracking data from a professional team in Mexico
+    %\item Pattern formation (2-D,3-D stochastic models, cellular automata, differential equations)
+    %\item Bike sharing system, Mexico city (characterizing system usage with network/graph theory)
+    \item Analyzed high-resolution spatio-temporal tracking data for a professional soccer team in Mexico
     \item Built and analyzed knowledge graphs of news articles using NLP and semantic graph techniques
     \item Developed an LSTM model for sentiment analysis of tweets in Spanish
-    %\item Rank-frequency distributions in written language (NLP).
-    \item VADER sentiment analysis and topic modeling to characterize pop songs. 
+    %\item Rank-frequency distribution analysis and stochastic modeling in written language (NLP).
+    \item VADER sentiment analysis and topic modeling to characterize pop music
     %\item Inferring game strategies for online Diplomacy. (probabilistic and time series approach)
-    %\item Estimating molecular energies. (Persistent maps, non-covalent interactions, linear regression)
-    \item Developed predictive models for wine properties and quality using ANN
+    %\item Estimating molecular energies. (linear regression)
+    %\item Developed predictive models for wine properties and quality using ANN (regression analysis)
 \end{itemize}
-}  
+} 
 \end{tabularx}
 %----------------------------------------------------------------------------------------
 %	EDUCATION

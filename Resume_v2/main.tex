@@ -1,0 +1,186 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=.8cm, a4paper]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt,parsep=0pt}
+\setitemize{leftmargin=*}
+
+\usepackage{tabularx}
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.28\textwidth}
+\setlength{\rightcolwidth}{0.73\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Alfredo}{Gonz\'alez-Espinoza}{| Data Scientist | Quantitative Researcher | Complexity Scientist | }{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{.5cm}
+\columnratio{0.28}[0.72]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+%\begin{center}
+%   \roundpic{jack.jpg}
+%\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+I am a multiskilled professional with a background in Chemistry, Physics and Computer Science. I have 10+ years of quantitative research experience. I use my analytical and technical skills to solve academic and business data-oriented problems with innovative interdisciplinary approaches. 
+\bigskip
+\vspace{6em}
+
+\bg{cvgreen}{white}{Strengths \& Skills} \\[0.5em]
+
+ Continuos learning ~•~ Intellectual curiosity  ~•~  Attentive listener ~•~\\ Self awareness 
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of expertise} \\[0.5em]
+
+Statistical Analysis ~•~ Hypothesis Testing/Causal Inference ~•~ Network/Graph Theory ~•~ Time Series Analysis ~•~ Machine Learning ~•~ Natural Language Processing
+\bigskip
+
+\bg{cvgreen}{white}{Technical Skills}\\[0.5em]
+Julia (Makie, Plots, Flux, MLJ, DataFrames) ~•~ Python (Pandas, Numpy, TensorFlow, PyTorch, Scikit-learn, NLTK, spaCy, scipy) ~•~ Linux, Bash, LaTeX, Git, SQL, Jupyter Notebook, MLOps
+\vspace{4em}
+
+\bigskip
+
+\bg{cvgreen}{white}{Languages}\\[0.5em]
+{\bf Spanish}: Native\\
+{\bf English}: Proficient
+\vspace{4em}
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+Amateur cellist/musician ~•~ Science communication ~•~ Neuroscience  ~•~ Photography ~•~ Cinema ~•~ Videogames ~•~ Soccer
+\vspace{10em}
+
+\infobubble{\faAt}{cvgreen}{white}{spiralizing@gmail.com}
+\href{https://linkedin.com/in/agonzaleze}{\infobubble{\faCircle}{cvgreen}{white}{LinkedIn@agonzaleze}}
+\href{https://github.com/spiralizing}{\infobubble{\faGithub}{cvgreen}{white}{spiralizing}}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Work Experience}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{\small 2019--2022}{Research Scientist}{University of Pennsylvania}{Philadelphia, USA \color{cvred}}{
+    \begin{itemize}[noitemsep,topsep=0pt]
+         \item Collected, cleaned and processed data from multiple sources and in variable formats: 1) 100,000+ MIDI, musicXML files. 2) Curated data-set of 27b of data points (track listenings) to construct time series for $\sim 600$k Last.fm users over 10 years.
+        \item Developed mathematical and probabilistic models and metrics to identify and quantify musical features. 
+        \item Designed experiments and implement computational algorithms for hypothesis testing.
+        \item Developed software and deployed it on Github.
+        \item Wrote first-author manuscripts for publication, results featured in the journal Scientific American.
+    \end{itemize}
+  
+    }{upenn.png} \\
+    \cvevent{2018--2019}{Research Scientist}{National Institute of Genomic Medicine}{Mexico City, MX \color{cvred}}{
+    \begin{itemize}[noitemsep,topsep=0pt] 
+        \item Developed a novel hybrid data-driven machine learning algorithm to identify communities of statistically dependent genes.
+        \item Build and manipulate datasets from database with sql
+        \item Performed advanced statistical analysis quantifying genomic features using information measures.
+        \item Mentored PhD students with their research projects.
+        \item Contributed to writing and deployment of software, and research manuscript for publication.
+    \end{itemize}
+  
+    }{inmegen.png}\\
+     \cvevent{2011--2018}{Research Assistant}{Institute of Physical Sciences, UNAM}{Morelos, MX \color{cvred}}{
+       \begin{itemize}[noitemsep,topsep=0pt]
+        \item Ran, monitored and organized computer simulations using monte carlo methods in molecular mechanics.  
+        \item Made protocols for reaction-diffusion experiments. Developed stochastic models and ran simulations for pattern formation systems.
+        \item Organized two international trans-disciplinary workshops on Science, Art and Cognition. 
+   
+    \end{itemize}
+     }{icf.png}
+\end{tabular}
+%\vspace
+\section*{Other \& Volunteering}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2014 -- Present}{Miscellaneous Data Science Projects}{Center of Complexity Sciences, UNAM}{Mexico City, MX \color{cvred}}{
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \item Developed LSTMs for sentiment scores of tweets in Spanish for social network analysis at Tlatelolco Lab (digital lab for democracy), UNAM.
+        \item Spatio-temporal analysis of high-resolution tracking data to quantify player performance for a Mexican professional soccer team (Pachuca FC).
+        \item Characterization of usage and growth of the bike sharing system in Mexico city with Network Theory. Results presented in LaNet 2017 conference.
+    \end{itemize}
+    }{c3.png} \\
+
+    \cvevent{2009--2019}{Assistant Conductor/Principal Cellist}{OSJEMMIC (Youth Orchestra)}{Morelos, MX \color{cvred}}{
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \item Fostered and maintained an inclusive and diverse environment.
+        \item Taught introductory music reading and playing to new members.
+        \item Conducted weekly rehearsals with chamber and full orchestras.
+        \item Organized concerts and drafted concert programs.
+    \end{itemize}
+    }{osjemmic.png} \\
+\end{tabular}
+
+\section*{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2014 - 2018 & {\bf PhD in Science (Physics)} Universidad Autónoma del Estado de Morelos (UAEM), MX, \em{Graduated with honors} \\
+2011 - 2014 & {\bf Master of Science (Physics)} UAEM, MX \\ 
+
+2005 - 2011 & {\bf Bachelor of Science (Chemistry)} UAEM, MX \\
+\end{tabularx}
+
+\vspace{0.2cm} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Alfredo Gonz\'alez-Espinoza \icon{\faMapMarker}{cvgreen}{} Philadelphia USA \icon{\faPhone}{cvgreen}{} (484) 758 8636 \newline\icon{\faAt}{cvgreen}{} \protect\url{spiralizing.github.io}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
